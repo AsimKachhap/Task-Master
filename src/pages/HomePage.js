@@ -11,7 +11,7 @@ const HomePage = () => {
         <div className="col-span-2">
           <Sidebar />
         </div>
-        <div className=" col-span-10 bg-orange-300 ">
+        <div className=" col-span-10 bg-[#F8FAFB] min-h-[calc(100vh_-_60px)]">
           <Outlet />
         </div>
       </div>
