@@ -1,18 +1,41 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   return (
-    <div className="flex flex-col gap-2">
-      <div>
-        <Link to="/daily">Daily</Link>
-      </div>
-      <div>
-        <Link to="/weekly">Weekly</Link>
-      </div>
-      <div>
-        <Link to="/monthly">Monthly</Link>
-      </div>
+    <div className="flex flex-col justify-around  ">
+      <NavLink
+        className={({ isActive }) =>
+          isActive
+            ? "bg-blue-200 py-4 px-8 m-2 rounded-md"
+            : "bg-neutral-400 py-4 px-8 m-2 rounded-md"
+        }
+        to="/daily"
+      >
+        Daily
+      </NavLink>
+
+      <NavLink
+        className={({ isActive }) =>
+          isActive
+            ? "bg-blue-200 py-4 px-8 m-2 rounded-md"
+            : "bg-neutral-400 py-4 px-8 m-2 rounded-md"
+        }
+        to="/weekly"
+      >
+        Weekly
+      </NavLink>
+
+      <NavLink
+        className={({ isActive }) =>
+          isActive
+            ? "bg-blue-200 py-4 px-8 m-2 rounded-md"
+            : "bg-neutral-400 py-4 px-8 m-2 rounded-md"
+        }
+        to="/monthly"
+      >
+        Monthly
+      </NavLink>
     </div>
   );
 };
