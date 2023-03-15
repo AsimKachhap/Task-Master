@@ -7,10 +7,7 @@ const DailyTaskBoard = ({ heading, pinColor }) => {
     "Solve 5 LeetCode Problems.",
   ];
   return (
-    <div
-      className="bg-[rgb(255, 25, 25)]"
-      style={{ backgroundColor: pinColor }}
-    >
+    <div style={{ backgroundColor: pinColor }}>
       <h3 className="text-2xl font-semibold text-center">{heading}</h3>
       <hr />
       <div className="flex flex-col gap-4">
@@ -18,7 +15,7 @@ const DailyTaskBoard = ({ heading, pinColor }) => {
           return (
             <div
               className="align-center px-4 py-4 rounded-md mx-3 my-2"
-              style={{ backgroundColor: "#ffffffd9" }}
+              style={{ backgroundColor: "#ffffffbf" }}
             >
               {item}
             </div>
